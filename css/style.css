@@ -1,0 +1,1353 @@
+/**FONTS**/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); /**bold**/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); /**medium**/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /**regular**/
+
+/*COLORS*/
+
+:root{
+    --colorDefault: #ffff00;
+    --whiteColor: #ffffff;
+}
+
+/*LOADER*/
+
+.loading{
+    margin: 0 auto;
+    position: fixed;
+    background-color: var(--whiteColor);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeOut 1s;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation: fadeOut 1s;
+    -o-animation-fill-mode: forwards;
+    -moz-animation: fadeOut 1s;
+    -moz-animation-fill-mode: forwards;
+}
+.main{
+    margin: 15rem auto;
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    border: 5px solid #000000;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+.dot2{
+    border: 5px solid var(--colorDefault);
+    border-radius: 50px;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    margin: -5px -5px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    animation: loader 1s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation: loader 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation: loader 1s linear;
+    -o-animation-iteration-count: infinite;
+    -moz-animation: loader 1s linear;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut{
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut{
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+/*LOADER END*/
+
+/*SCROLL-BAR*/
+
+::-webkit-scrollbar{
+    width: 3px!important;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--colorDefault)!important;
+    border-radius: 50px!important;
+}
+::-webkit-scrollbar-track{
+    background-color: #000000;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*NAVBAR*/
+
+.navbar{
+    background-color: transparent!important;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+#nav.fixed{
+    background-color: #000000f5!important;
+    padding: 0;
+}
+.navbar-brand{
+    font-size: 1.7rem;
+    color: var(--colorDefault)!important;
+    padding-left: 6rem;
+}
+.navbar-nav{
+    margin: 0 35rem auto;
+}
+.navbar-nav > li{
+    font-size: 1.2rem;
+    margin: 15px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;  
+}
+.nav-link{
+    color: var(--whiteColor)!important;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.nav-link:hover{
+    color: var(--colorDefault)!important;
+}
+
+/*HOME section*/
+
+.home{
+    background: url("../images/header/img.jpg") no-repeat;
+    background-size: cover;
+    height: 42rem;
+}
+.col-md-6{
+    margin: 25% auto;
+}
+.titles > p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+}
+.titles > h3{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--whiteColor);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+}
+.button{
+    width: 100%;
+    margin: 3rem 10rem auto;
+}
+.button > a{
+    background-color: var(--colorDefault);
+    color: #000000;
+    padding: 1.5rem 4rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*SERVICES section*/
+
+.services{
+    padding: 5rem 0 5rem;
+}
+.services > .container > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.services > .container > .row > .col-md-4 > .card{
+    border: none;
+    border-radius: 0;
+}
+.services > .container > .row > .col-md-4 > .card > .card-header{
+    text-align: center;
+    border-bottom: none;
+    background-color: transparent;
+}
+.card > .card-header > i{
+    font-size: 3rem;
+    background-color: var(--colorDefault);
+    padding: 1.5rem;
+    border-radius: 50px;
+}
+.card > .card-body{
+    text-align: center;
+}
+
+
+/*PORTFOLIO section*/
+
+
+.portfolio{
+    padding: 5rem 0 5rem;
+}
+.portfolio > .container > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.col-md-4 > .card > .card-header > img{
+    width: 100%;
+}
+.card{
+    border: none;
+    border-radius: 0;
+}
+.card > .card-header{
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+.card-header > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 271px;
+    background: #ffff00cf;
+    opacity: 0;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay > h4{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.overlay > p{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+/*ABOUT section*/
+
+.about{
+    padding: 5rem 0 5rem;
+}
+.about > .container > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.about > .container > .row > .col-md-4{
+    margin: 4rem 5rem;
+}
+.about > .container > .row > .col-md-4:nth-child(2){
+    margin: 9rem 0;
+}
+.info > h4{
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.info > p {
+    letter-spacing: 0.5px;
+    margin: 3rem 0 3rem;
+}
+.info > ul{
+    margin-left: -2rem;
+    display: inline;
+    justify-content: center;
+}
+.info > ul > li {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+ul > li > .firstSpan{
+    font-weight: bold;
+}
+ul > li > .secondSpan{
+    color: #808080;
+}
+
+/*FOOTER section*/
+
+
+.footer{
+    background-color: #000000;
+    padding: 2rem;
+}
+.copyright > p{
+    color: var(--whiteColor);
+}
+.smallInfo{
+    color: var(--whiteColor);
+}
+.social-networks > a {
+    text-decoration: none;
+    margin: 5px;
+}
+.social-networks > a > i {
+    width: 40px;
+    height: 40px;
+    background-color: var(--colorDefault);
+    color: #000000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.social-networks > a > i:hover{
+    background-color: #000000;
+    color: var(--colorDefault);
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1200px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 90px;
+        height: 90px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 1.3rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 25rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 25% auto;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+    }
+    .titles > h3{
+        font-size: 2rem;
+    }
+    .button{
+        margin: 3rem 10rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.5rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 5rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 19px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 90px;
+        height: 90px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 1.3rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 25rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 25% auto;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+    }
+    .titles > h3{
+        font-size: 2rem;
+    }
+    .button{
+        margin: 3rem 10rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.5rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 5rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 19px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 976px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 90px;
+        height: 90px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 13.5rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 40% auto;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+    }
+    .titles > h3{
+        font-size: 2rem;
+    }
+    .button{
+        margin: 3rem 7rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.5rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 5rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 14px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 767px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 13.5rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 40% auto;
+    }
+    .titles > p{
+        font-size: 1.3rem;
+    }
+    .titles > h3{
+        font-size: 2rem;
+    }
+    .button{
+        margin: 3rem 13rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 5rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 17px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem -2rem;
+    }
+}
+@media screen and (max-width: 501px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 11.5rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > p{
+        font-size: 1rem;
+    }
+    .titles > h3{
+        font-size: 1.7rem;
+    }
+    .button{
+        margin: 3rem 10.5rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 5rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 17px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem -2rem;
+    }
+}
+@media screen and (max-width: 460px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 9.5rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > p{
+        font-size: 1rem;
+    }
+    .titles > h3{
+        font-size: 1.7rem;
+    }
+    .button{
+        margin: 3rem 8.5rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 3rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 17px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem -2rem;
+    }
+}
+@media screen and (max-width: 400px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 7.5rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > p{
+        font-size: 1rem;
+    }
+    .titles > h3{
+        font-size: 1.7rem;
+    }
+    .button{
+        margin: 3rem 7.5rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 2rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 17px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem -2rem;
+    }
+}
+@media screen and (max-width: 370px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 7.5rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 36rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > p{
+        font-size: 1rem;
+    }
+    .titles > h3{
+        font-size: 1.7rem;
+    }
+    .button{
+        margin: 3rem 6.5rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 2rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 17px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem -2rem;
+    }
+}
+@media (min-width: 315px) and (max-width: 330px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .dot, .dot2{
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar > button{
+        border: none!important;
+    }
+    .navbar > button:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    .navbar-brand{
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .change{
+        background-color: #000000!important;
+    }
+    .navbar-nav{
+        margin: 0 6rem;
+    }
+    .navbar-nav > li{
+        margin: 10px
+    }
+
+    /**HOME**/
+
+    .home{
+        height: 30rem;
+    }
+    .col-md-6{
+        margin: 50% auto;
+    }
+    .titles > p{
+        font-size: 1rem;
+    }
+    .titles > h3{
+        font-size: 1.7rem;
+    }
+    .button{
+        margin: 3rem 5.5rem auto;
+    }
+    .button > a{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /**SERVICES**/
+
+    .services > .container > h3{
+        font-size: 1.8rem;
+    }
+    .services > .container > p{
+        font-size: 0.9rem;
+    }
+    .card > .card-header > i{
+        font-size: 2rem;
+    }
+
+    /**PORTFOLIO**/
+
+    .portfolio > .container > h3{
+        font-size: 1.8rem;
+    }
+    .portfolio > .container > p{
+        font-size: 0.9rem;
+    }
+    .card-header > .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay > h4{
+        font-size: 1.7rem;
+    }
+
+
+    /**ABOUT**/
+
+    .about > .container > h3{
+        font-size: 1.8rem;
+    }
+    .about > .container > p{
+        font-size: 0.9rem;
+    }
+    .about > .container > .row > .col-md-4{
+        margin: 4rem 2rem 0;
+    }
+    .about > .container > .row > .col-md-4:nth-child(2){
+        margin: 4rem 0;
+    }
+    .info > h4{
+        font-size: 1.8rem;
+    }
+    .info > p{
+        margin: 1rem 0 2rem;
+    }
+    .info > ul > li{
+        font-size: 17px;
+    }
+
+    /**FOOTER**/
+
+    .footer > .container > .row > .col-md-4{
+        margin: 1rem -2rem;
+    }
+}
