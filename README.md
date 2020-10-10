@@ -13,11 +13,11 @@ siz kurs oxirida o'zingizni shaxsiy saytingizga ega bo'lishingiz mumkin. Buning 
 
 YouTube kanalim:  youtube.com/JavohirHakimov
 
-*Video kursni YouTube kanalimdagi pleylist bo'limidan to'liq shaklda topib olsangiz bo'ladi
+*Video kursni YouTube kanalimdagi pleylist bo'limidan to'liq shaklda topib olsangiz bo'ladi*
 
 Telegram kanalim:  t.me/javohir_group
 
-*Video kursni Telegram kanalimdan #portfolio heshtegi ostida osonlik bilan qidirib topib olishingiz mumkin
+*Video kursni Telegram kanalimdan #portfolio heshtegi ostida osonlik bilan qidirib topib olishingiz mumkin*
 
 # E'tiboringiz uchun rahmat sog' bo'ling!
 
