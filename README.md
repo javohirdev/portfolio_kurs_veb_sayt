@@ -4,27 +4,27 @@ Assalomu aleykum qadrli do'stlar! Ushbu kurs orqali o'zlarining shaxsiy saytlari
 kursda ko'rsatilgan veb saytning kodlarini joyladim. Ushbu kodlarni saytni qilayotganingizda bo'ladigan tushunmovchiliklarga ozgina bo'lsa ham
 yordam beradi deb umid qilaman.
 
-# Video kurs oxirida shaxsiy veb saytingizga ega bo'lishingiz mumkin!
+## Video kurs oxirida shaxsiy veb saytingizga ega bo'lishingiz mumkin!
 
 Agarda siz video kursni oxirigacha to'liq tomosha qilib va vazifalarni o'z vaqtida bajarsangiz,
 siz kurs oxirida o'zingizni shaxsiy saytingizga ega bo'lishingiz mumkin. Buning uchun esa sizdan xohish va harakat talab etiladi.
 
-# Ushbu video kursni YouTube va Telegram kanallarimdan topishingiz mumkin
+## Ushbu video kursni YouTube va Telegram kanallarimdan topishingiz mumkin
 
-/*YouTube kanalim:*/  youtube.com/JavohirHakimov
+###### YouTube kanalim:  youtube.com/JavohirHakimov
 
 *Video kursni YouTube kanalimdagi pleylist bo'limidan to'liq shaklda topib olsangiz bo'ladi*
 
-Telegram kanalim:  t.me/javohir_group
+###### Telegram kanalim:  t.me/javohir_group
 
 *Video kursni Telegram kanalimdan #portfolio heshtegi ostida osonlik bilan qidirib topib olishingiz mumkin*
 
-# E'tiboringiz uchun rahmat sog' bo'ling!
+## E'tiboringiz uchun rahmat sog' bo'ling!
 
 Men bilan aloqa uchun:
 
-Telegram:  t.me/JavohirDev
+###### Telegram:  t.me/JavohirDev
 
-Veb saytim: https://javohirdev.netlify.app
+###### Veb saytim: https://javohirdev.netlify.app
 
-Instagram: instagram.com/javohirdev
+###### Instagram: instagram.com/javohirdev
