@@ -1,5 +1,5 @@
-# Javohir Groupning portfolio veb sayt tuzish kursida ko'rsatilgan 
-# veb saytning ochiq kodlari
+# Javohir Groupning Portfolio veb sayt tuzishni o'rganing
+# kursida ko'rsatilgan veb saytning ochiq kodlari
 
 Assalomu aleykum qadrli do'stlar! Ushbu kurs orqali o'zlarining shaxsiy saytlarini tuzayotgan o'quvchilar uchun qulaylik maqsadida 
 kursda ko'rsatilgan veb saytning kodlarini joyladim. Ushbu kodlarni saytni qilayotganingizda bo'ladigan tushunmovchiliklarga ozgina bo'lsa ham
