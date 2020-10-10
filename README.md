@@ -11,7 +11,7 @@ siz kurs oxirida o'zingizni shaxsiy saytingizga ega bo'lishingiz mumkin. Buning 
 
 # Ushbu video kursni YouTube va Telegram kanallarimdan topishingiz mumkin
 
-YouTube kanalim:  youtube.com/JavohirHakimov
+/*YouTube kanalim:*/  youtube.com/JavohirHakimov
 
 *Video kursni YouTube kanalimdagi pleylist bo'limidan to'liq shaklda topib olsangiz bo'ladi*
 
