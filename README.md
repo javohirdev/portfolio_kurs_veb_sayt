@@ -11,11 +11,11 @@ siz kurs oxirida o'zingizni shaxsiy saytingizga ega bo'lishingiz mumkin. Buning 
 
 ## Ushbu video kursni YouTube va Telegram kanallarimdan topishingiz mumkin
 
-###### YouTube kanalim:  youtube.com/JavohirHakimov
+###### YouTube kanalim:   https://youtube.com/JavohirHakimov
 
 *Video kursni YouTube kanalimdagi pleylist bo'limidan to'liq shaklda topib olsangiz bo'ladi*
 
-###### Telegram kanalim:  t.me/javohir_group
+###### Telegram kanalim:  https://t.me/javohir_group
 
 *Video kursni Telegram kanalimdan #portfolio heshtegi ostida osonlik bilan qidirib topib olishingiz mumkin*
 
@@ -23,8 +23,8 @@ siz kurs oxirida o'zingizni shaxsiy saytingizga ega bo'lishingiz mumkin. Buning 
 
 Men bilan aloqa uchun:
 
-###### Telegram:  t.me/JavohirDev
+###### Telegram:  https://t.me/JavohirDev
 
 ###### Veb saytim: https://javohirdev.netlify.app
 
-###### Instagram: instagram.com/javohirdev
+###### Instagram: https://instagram.com/javohirdev
